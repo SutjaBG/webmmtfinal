@@ -54,9 +54,6 @@
     h3,
     h4,
     h5,
-    h6,
-    h7,
-    h8,
     p {
       font-family: "Mitr", serif;
       /* กำหนดฟอนต์ */
@@ -139,14 +136,7 @@
       color: #408fe9;
       /* สีน้ำเงิน */
     }
-    h8 {
-      font-size: 2rem;
-      /* ขนาดตัวอักษร */
-      font-weight: bold;
-      /* ตัวหนา */
-      color: #000000;
-      /* สีน้ำเงิน */
-    }
+
     /* สไตล์เฉพาะสำหรับ p */
     p {
       font-size: 1rem;
@@ -432,29 +422,7 @@
       color: #007BFF; /* สีข้อความสำหรับลิงก์ที่ active */
       font-weight: 600; /* ตัวหนาเมื่อ active */
       }
-      .btn {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #0077ff;
-    color: #fff;
-    font-family: "Mitr", sans-serif; /* เปลี่ยนฟอนต์เป็น Mitr */
-    font-size: 0.9rem; /* ขนาดฟอนต์ */
-    font-weight: 500; /* ความหนาฟอนต์ */
-    text-decoration: none; /* ลบเส้นใต้ */
-    border-radius: 20px; /* มุมโค้ง */
-    text-align: center;
-    transition: background-color 0.3s ease, transform 0.2s ease; /* เพิ่มเอฟเฟกต์ transition */
-}
-
-.btn:hover {
-    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
-    transform: translateY(-2px); /* เลื่อนปุ่มขึ้นเล็กน้อยเมื่อ hover */
-}
-
-.btn:active {
-    transform: translateY(0); /* คืนค่าตำแหน่งเมื่อคลิก */
-}
-      </style>
+    </style>
 
   </head>
   <body>
@@ -475,23 +443,24 @@
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <ul class="navbar-nav">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                     <li class="nav-item">
                       <a class="nav-link" href="index.html">หน้าแรก</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="course.html">หลักสูตร</a>
+                      <a class="nav-link" href="course.html">หลักสูตร</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="teacher.html">อาจารย์</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">กิจกรรมประจำสาขา</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">ช่องทางการติดต่อ</a>
-                    </li> 
-                </ul>                    
+                      <a class="nav-link" href="teacher.html">อาจารย์</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="activity.html">กิจกรรมสาขา</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ช่องทางการติดต่อ</a>
+                      </li>                    
+                        <li>
+                      </ul>
                     </li>
                   </ul>
                   </form>
@@ -509,7 +478,7 @@
             <img src="banner1.jpg" alt="First slide">
             <div class="carousel-caption">
               <h1>Welcome to Multimedia Of Technology</h1>
-              <h6>ยินดีต้อนรับ สู่ สาขามัลติมีเดียและเทคโนโลยี<h6>
+              <h6>ยินดีต้อนรับ สู่ เว็บไซต์สาขาเทคโนโลยีมัลติมีเดีย<h6>
             </div>
           </div>
           <div class="carousel-item">
@@ -531,208 +500,317 @@
       </div>
     </section>
     
-<head>
-    <title>แนะนำอาจารย์</title>
-<head>
-  <!DOCTYPE html>
+  <body>
+     <div class="container mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+            </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              </button>
+            </h2>
+            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>• ศูนย์พระนครศรีอยุธยา หันตรา เปิดสอนในระดับปริญญาตรี</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+    </html>
+
+    </body>
+    <!DOCTYPE html>
 <html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บล็อกของฉัน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .team-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .team-section h2 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .team-section p {
+            color: #666;
+            margin: 10px 0 30px;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            position: relative;
+            width: 250px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .team-member img {
+            width: 100%;
+            display: block;
+        }
+        .team-info {
+            padding: 15px;
+        }
+        .team-info h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #0077ff;
+            
+        }
+        .team-info h4 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #000000;
+            
+        }
+        .team-info h5 {
+            margin: 10px 0 5px;
+            font-size: 1.2rem;
+            color: #ff0000;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .team-member:hover .overlay {
+            opacity: 1;
+        }
+        .overlay a {
+            color: #fff;
+            margin: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .overlay a:hover {
+            text-decoration: underline;
+        }
+    </style>
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+div.desc {
+  padding: 15px;
+  text-align: center;
+} 
+/* กำหนดสไตล์สำหรับลิงก์ */
+a.no-underline {
+    text-decoration: none; /* ลบเส้นใต้ */
+    color: inherit; /* ใช้สีตัวหนังสือตามปกติ */
+}
+
+a.no-underline:hover {
+    text-decoration: underline; /* เพิ่มเส้นใต้เฉพาะเมื่อเอาเมาส์ไปวาง */
+}
+</style>
+
+<body>
+  <center>
+  <div class="content-box">
+      <!-- ส่วนข้อความ -->
+      <div class="text-section">
+          <h2>ช่องทางติดต่อและสถานที่ตั้ง</h2>
+          <p>
+              &nbsp;&nbsp;&nbsp;สำนักงานคณบดี คณะวิทยาศาสตร์และเทคโนโลยี ( อาคาร 23 ชั้น 2 ) <br>
+              มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา
+              เลขที่ 60 หมู่ 3 ถนนสายเอเซีย (กรุงเทพฯ - นครสวรรค์ ) <br>
+              ต.หันตรา อ.พระนครศรีอยุธยา จ.พระนครศรีอยุธยา 13000 <br>
+              Google Map : อาคาร 23 คณะวิทยาศาสตร์และเทคโนโลยี RUS
+              <br>
+              &nbsp; - ช่องทางติดต่อ
+              โทรศัพท์ : 092-2630-007
+              <br><br>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1631.5429784543871!2d100.60368168625034!3d14.37667221671739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2750057b76311%3A0x88204de8de802fa3!2z4Liq4Liy4LiC4Liy4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lih4Lix4Lil4LiV4Li04Lih4Li14LmA4LiU4Li14LiiIOC4oeC4l-C4oy7guKrguLjguKfguKPguKPguJPguKDguLnguKHguLQg4Lie4Lij4Liw4LiZ4LiE4Lij4Lio4Lij4Li14Lit4Lii4Li44LiY4Lii4Liy4Lir4Lix4LiZ4LiV4Lij4Liy!5e1!3m2!1sth!2sus!4v1739690771389!5m2!1sth!2sus"
+                  width="850" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+              </center>
+          </p>
+      </div>
+  </div>
+  <br>
+  <br>
+</body>
+</div>
+<CENTER>
+</CENTER>
+<section class="team-section">
+  <h4>ช่องทางการติดตาม</h4>
+  <div class="team-container">
+    <!-- Facebook -->
+    <div class="team-member">
+      <a href="https://www.facebook.com/MMT.RUS/" target="_blank" class="no-underline">
+        <div class="team-info">
+          <h3>FACEBOOK</h3>
+          <center>
+            <img src="Facebook_Logo_(2019).png" alt="Facebook Logo" style="width: 40px; height: 40px;">
+          </center>
+        </div>
+        <div class="overlay"></div>
+      </a>
+    </div>
+
+    <!-- TikTok -->
+    <div class="team-member">
+      <a href="https://www.tiktok.com/@mmt_rus" target="_blank" class="no-underline">
+        <div class="team-info h4">
+          <h4>TIKTOK</h4>
+          <center>
+            <img src="image-removebg-preview (1).png" alt="Facebook Logo" style="width: 40px; height: 40px;">
+          </center>
+        </div>
+        <div class="overlay"></div>
+      </a>
+    </div>
+
+    <!-- YouTube -->
+    <div class="team-member">
+      <a href="https://www.youtube.com/channel/UClM8qn2QhlC3q6EiVznQ9JA" target="_blank" class="no-underline">
+        <div class="team-info h5">
+          <h5>YOUTUBE</h5>
+          <center>
+            <img src="image-removebg-preview (4).png" alt="Facebook Logo" style="width: 45px; height: 45px;">
+          </center>
+        </div>
+        <div class="overlay"></div>
+      </a>
+    </div>
+</section>
+<style>
+  /* กำหนดสไตล์สำหรับลิงก์ */
+  a.no-underline {
+    text-decoration: none;
+    /* ลบเส้นใต้ */
+    color: inherit;
+    /* ใช้สีตัวหนังสือตามปกติ */
+  }
+
+  a.no-underline:hover {
+    text-decoration: underline;
+    /* เพิ่มเส้นใต้เฉพาะเมื่อเอาเมาส์ไปวาง */
+  }
+</style>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>กิจกรรมประจำสาขา</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Custom CSS -->
+  <title>Services Section</title>
   <style>
-    /* Reset CSS */
-    * {
+    body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
+      background-color: #fefefe;
     }
 
-    body {
-      font-family: "Mitr", sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Container */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    /* Section Heading */
-    .section-heading {
+    .services-section {
       text-align: center;
-      margin-bottom: 40px;
+      padding: 50px 20px;
+      background: #fff5f0;
     }
 
-    .section-heading h2 {
+    .services-section h2 {
       font-size: 2.5rem;
-      font-weight: 700;
-      color: #0077ff;
+      color: #333;
+    }
+
+    .services-section p {
+      color: #666;
+      margin: 10px 0 30px;
+    }
+
+    .services-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .service-box {
+      width: 250px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: translateY(-10px);
+    }
+
+    .service-icon img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
       margin-bottom: 10px;
     }
 
-    .section-heading p {
-      font-size: 1.1rem;
-      color: #666;
+    .service-description {
+      font-size: 0.9rem;
+      color: #777;
     }
-
-    /* Activity Cards */
-/* Activity Cards */
-.activity-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px; /* เพิ่ม padding เพื่อเว้นระยะห่างจากขอบ */
-}
-
-.activity-card {
-    background: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column; /* จัดเรียงเนื้อหาใน card แบบคอลัมน์ */
-}
-
-.activity-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.activity-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.activity-card .card-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* ระยะห่างระหว่างเนื้อหา */
-}
-
-.activity-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0; /* ลบ margin เพื่อควบคุมระยะห่างด้วย gap */
-}
-
-.activity-card p {
-    font-size: 1rem;
-    color: #666;
-    margin: 0; /* ลบ margin เพื่อควบคุมระยะห่างด้วย gap */
-}
-
-.activity-card .btn {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: #0077ff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-    align-self: flex-start; /* จัดปุ่มให้ชิดซ้าย */
-}
-
-.activity-card .btn:hover {
-    background-color: #0056b3;
-}
   </style>
-</head>
-<body>
-  <!-- กิจกรรมประจำสาขา -->
-  <section class="activity-section">
-    <div class="container">
-      <div class="section-heading">
-        <h1>กิจกรรมประจำสาขา</h1>
-      </div>
-      <div class="activity-grid">
-        <!-- กิจกรรมที่ 1 -->
-        <div class="activity-card">
-          <img src="467904652_1117823017015905_574871964926416585_n.jpg" alt="กิจกรรมที่ 1">
-          <div class="card-body">
-            <h3>ได้รับรางวัล รองชนะเลิศอันดับหนึ่ง ในการส่งผลงานภาพยนตร์สั้น ปมหลอน ซ่อนวิญญาณ ตอน แฟลชไดรฟ์</h3>
-            <p>คณะวิทยาศาสตร์และเทคโนโลยี ขอแสดงความยินดีกับ นายณัฐพงษ์ พลายภู่, น.ส.ปรียาภัทร์ พิทย์เธียรกุล และนายศราวุฒิ ธนะวิบูลย์ นักศึกษา สาขาเทคโนโลยีมัลติมีเดีย และ ผศ.ชัชฎา ชวรางกูร อาจารย์ที่ปรึกษา ที่ได้รับรางวัล รองชนะเลิศอันดับหนึ่ง  ในการส่งผลงานภาพยนตร์สั้น ปมหลอน ซ่อนวิญญาณ ตอน แฟลชไดรฟ์ เข้าประกวดในโครงการประกวดภาพยนตร์สั้น ประเภทภาพยนตร์สยองขวัญ "หลอนศาสตร์" เมื่อวันที่ 20 พฤศจิกายน 2567  ณ ห้องประชุม ดร.เทียม โชควัฒนา คณะนิเทศศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย </p>
-            <a href="https://www.facebook.com/SCI.RMUTSB/posts/pfbid0P768YeTrKNTboTzUPu8MJH891QipShYHRPQNFbMMWTiBQyYtpSnynkG3DoPd6Zd4l" class="btn"target="_blank">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <!-- กิจกรรมที่ 2 -->
-        <div class="activity-card">
-          <img src="458327733_1007684444482298_542035498334557262_n.jpg" alt="กิจกรรมที่ 2">
-          <div class="card-body">
-            <h3>คณาจารย์ และนักศึกษาสาขาวิชาเทคโนโลยีมัลติมีเดีย มทร.สุวรรณภูมิ ได้ส่งผลงานและร่วมพิธีเปิด ในการแสดงผลงานศิลปะและการออกแบบแห่งประเทศไทย ครั้งที่</h3>
-            <p>3 กันยายน 2567 คณาจารย์ และนักศึกษาสาขาวิชาเทคโนโลยีมัลติมีเดีย มทร.สุวรรณภูมิ ได้ส่งผลงานและร่วมพิธีเปิด ในการแสดงผลงานศิลปะและการออกแบบแห่งประเทศไทย ครั้งที่ 5 5th Thailand Art and Design Exhibition  ณ หอศิลปวัฒนธรรมแห่งกรุงเทพมหานคร
-              โดย ชมรมคนสร้างสื่อ Media Art เป็นตัวแทนมหาวิทยาลับเทคโนโลยีราชมงคลสุวรรณภูมิ ส่งผลงานภาพยนตร์สั้น เรื่อง เจ้าแม่สร้อยดอกหมาก เข้าฉายในกิจกรรมภาพยนตร์สั้น จากมหาวิทยาลัยเทคโนโลยีราชมงคลทั้ง 9 แห่ง
-              ดำเนินการจัดโครงการโดย คณะสถาปัตยกรรมศาสตร์และการออกแบบ มหาวิทยาลัยเทคโนโลยีราชมงคลรัตนโกสินทร์
-            </p>
-            <a href="https://www.facebook.com/MMT.RUS/posts/pfbid02QqEntrh8SGMTNtYMuWyfkvVfuBgc9U3cXEFdUBmPMT1CXGHfLPjs6KqNq3ozokzhl" class="btn"target="_blank">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <!-- กิจกรรมที่ 3 -->
-        <div class="activity-card">
-          <img src="458511995_1009089874341755_6578052916848386283_n.jpg" alt="กิจกรรมที่ 3">
-          <div class="card-body">
-            <h3>RUS AMBASSADOR 2024</h3>
-            <p>น้องๆ สาขาวิชาเทคโนโลยีมัลติมีเดีย ในงาน
-              RUS AMBASSADOR 2024🎧
-              🎪ในวันพุธที่ 11 กันยายน 2567 
-              ณ หอประชุมพระพิรุณระลึกโปรดเกล้าฯ
-              มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ 
-              ศูนย์พระนครศรีอยุธยา หันตรา
-              #Freshy67 #RUS</p>
-            <a href="https://www.facebook.com/MMT.RUS/posts/pfbid02n1jnH5foRopuNmwh3RLXv2kMkoumFqnB7R6tityaqPQ1gZfg9bT9RrL46mxDajcyl" class="btn"target="_blank">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <!-- กิจกรรมที่ 3 -->
-        <div class="activity-card">
-          <img src="467429941_1061669519083790_2373807684829024779_n.jpg" alt="กิจกรรมที่ 3">
-          <div class="card-body">
-            <h3>สาขาวิชาเทคโนโลยีมัลติมีเดีย ผลงานภาพยนตร์สั้น เรื่องปมหลอน ได้รับการคัดเลือกเป็น 1 ใน 8 เรื่อง ที่ฉายในโครงการหลอนศาสตร์ จัดโครงการโดยคณะนิเทศศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย 
-              โดยมีวิทยากรผู้กำกับภาพยนตร์สยองขวัญระดับประเทศเข้าร่วทสัมมนา</h3>
-            <p>ขอแสดงความยินดีกับ นายณัฐพงศ์ พลายภู่ น.ส.ปรียาภัทร์ พิทย์เธียรกุล และนายสราวุฒิ ธนะวิบูลย์ และผศ.ชัชฎา ชวรางกูร อาจารย์ที่ปรึกษา ที่ผลงานภาพยนตร์สั้น เรื่องปมหลอนซ่อนวิญญาณ ตอน แฟลชไดร์ฟ ได้รับการคัดเลือกเป็น 1 ใน 8 เรื่อง ที่ฉายในโครงการหลอนศาสตร์</p>
-            <a href="https://www.facebook.com/MMT.RUS/posts/pfbid02n1jnH5foRopuNmwh3RLXv2kMkoumFqnB7R6tityaqPQ1gZfg9bT9RrL46mxDajcyl" class="btn"target="_blank">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <!-- กิจกรรมที่ 3 -->
-        <div class="activity-card">
-          <img src="429839609_899012198682857_5964926979836775611_n.jpg" alt="กิจกรรมที่ 3">
-          <div class="card-body">
-            <h3>ได้จัดโครงการอบรมเชิงปฏิบัติการเพื่อเพิ่มสมรรถนะวิชาชีพ ในหัวข้อ Storytelling Content & Creative Marketing</h3>
-            <p>เมื่อวันที่ 6 มีนาคม พ.ศ.2567 หลักสูตรเทคโนโลยี่มัลติมีเดีย ศูนย์หันตรา ได้จัดโครงการอบรมเชิงปฏิบัติการเพื่อเพิ่มสมรรถนะวิชาชีพ ในหัวข้อ Storytelling Content & Creative Marketing โดยคุณจักรี จ่ายกระโทก เจ้าของช่องการ์ตูน โกรกกราก Animation และคณะเป็นวิทยากรในการอบรมในครั้งนี้</p>
-            <a href="https://www.facebook.com/MMT.RUS/posts/pfbid02LwpnSCXHtJ5V8uqhmgXJkttSsPVQHRxgb2BgZephBjiRzAJMUYasU1DbqtwDmxXHl?rdid=FqkUSxFADIShOXC6#" class="btn"target="_blank">ดูรายละเอียด</a>
-          </div>
-        </div>
-        <!-- กิจกรรมที่ 3 -->
-        <div class="activity-card">
-          <img src="453776115_985394983377911_8395757344869900507_n.jpg" alt="กิจกรรมที่ 3">
-          <div class="card-body">
-            <h3>พานักศึกษา ศึกษาดูงาน ณ พิพิธภัณฑ์พระรามเก้า องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ</h3>
-            <p>วันที่ 31 กรกฎาคม 2567 หลักสูตรเทคโนโลยีมัลติมีเดีย พานักศึกษา ศึกษาดูงาน ณ พิพิธภัณฑ์พระรามเก้า องค์การพิพิธภัณฑ์วิทยาศาสตร์แห่งชาติ และ ศูนย์วิทยาศาสตร์เพื่อการศึกษารังสิต</p>
-            <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0a5TgVwhcKhiZtthYkQbKFkacNhHGDMBU464vmWKnk1brmKc3VwazwTXjd2iZdeVcl" class="btn"target="_blank">ดูรายละเอียด</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</body>
-</html>
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <div class="content">
+    <!-- เนื้อหาหลักของเว็บไซต์ที่นี่ -->
+  </div>
 
+  <div class="content">
+    <!-- เนื้อหาหลักของเว็บไซต์ที่นี่ -->
+  </div>
+  </style>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Section</title>
@@ -827,4 +905,6 @@
         font-size: 15px; /* ขนาดตัวอักษร */
       }
     </style>            
+</html>
+
 </html>

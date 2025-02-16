@@ -1,122 +1,215 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product example · Bootstrap v5.3</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product example · Bootstrap v5.3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
 
-      /* แบนเนอร์ */
-      .banner {
-        position: relative;
-        width: 100%;
-        height: 400px;
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      .carousel-item img {
-        object-fit: cover;
-        width: 100%;
-        height: 400px; /* ให้สูงเท่ากับแบนเนอร์ */
-      }
+    /* แบนเนอร์ */
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
 
-      .carousel-caption {
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        text-align: left;
-        color: white;
-        background-color: rgba(0, 0, 0, 0.5); /* เพิ่มพื้นหลังโปร่งใส */
-        padding: 15px;
-      }
-      /* สไตล์สำหรับแท็ก h1 ถึง h5 และ p */
-      h1, h2, h3, h4, h5, p {
-        font-family: "Mitr", serif; /* กำหนดฟอนต์ */
-        color: #333; /* สีข้อความหลัก */
-        margin: 0 0 15px 0; /* ระยะห่างด้านล่าง */
-        line-height: 1.6; /* ความสูงของบรรทัด */
+    .carousel-item img {
+      object-fit: cover;
+      width: 100%;
+      height: 400px;
+      /* ให้สูงเท่ากับแบนเนอร์ */
+    }
 
-      }     
+    .carousel-caption {
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+      text-align: left;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      /* เพิ่มพื้นหลังโปร่งใส */
+      padding: 15px;
+    }
 
-      /* สไตล์เฉพาะสำหรับ h1 */
-      h1 {
-        font-size: 2.5rem; /* ขนาดตัวอักษร */
-        font-weight: bold; /* ตัวหนา */
-        color: #0077ff; /* สีน้ำเงิน */
-      }
+    /* สไตล์สำหรับแท็ก h1 ถึง h5 และ p */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      font-family: "Mitr", serif;
+      /* กำหนดฟอนต์ */
+      color: #333;
+      /* สีข้อความหลัก */
+      margin: 0 0 15px 0;
+      /* ระยะห่างด้านล่าง */
+      line-height: 1.6;
+      /* ความสูงของบรรทัด */
 
-      /* สไตล์เฉพาะสำหรับ h2 */
-      h2 {
-        font-size: 2rem; /* ขนาดตัวอักษร */
-        font-weight: bold; /* ตัวหนา */
-        color: #009688; /* สีเขียวอมฟ้า */
-      }
+    }
 
-      /* สไตล์เฉพาะสำหรับ h3 */
-      h3 {
-        font-size: 1.9rem; /* ขนาดตัวอักษร */
-        font-weight: bold; /* ตัวหนา */
-        color: #fc7f59; /* สีส้ม */
-      }
+    /* สไตล์เฉพาะสำหรับ h1 */
+    h1 {
+      font-size: 2.5rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #0077ff;
+      /* สีน้ำเงิน */
+      -webkit-text-stroke: 1px black; /* เพิ่ม stroke (เส้นขอบ) */
+      text-stroke: 1px black; /* สำหรับเบราว์เซอร์ที่รองรับ */
+    }
 
-      /* สไตล์เฉพาะสำหรับ h4 */
-      h4 {
-        font-size: 1.5rem; /* ขนาดตัวอักษร */
-        font-weight: bold; /* ตัวหนา */
-        color: #673ab7; /* สีม่วง */
-      }
+    /* สไตล์เฉพาะสำหรับ h2 */
+    h2 {
+      font-size: 2rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #009688;
+      /* สีเขียวอมฟ้า */
+    }
 
-      /* สไตล์เฉพาะสำหรับ h5 */
-      h5 {
-        font-size: 1.25rem; /* ขนาดตัวอักษร */
-        font-weight: bold; /* ตัวหนา */
-        color: #e91e63; /* สีชมพู */
-      }
-      h6 {
-        font-size: 1.5rem; /* ขนาดตัวอักษร */
-        font-weight: bold; /* ตัวหนา */
-        color: #ffffff; /* สีชมพู */
-      }
+    /* สไตล์เฉพาะสำหรับ h3 */
+    h3 {
+      font-size: 1.9rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #ffffff;
+      /* สีส้ม */
+    }
 
-      /* สไตล์เฉพาะสำหรับ p */
-      p {
-        font-size: 1rem; /* ขนาดตัวอักษร */
-        color: #666; /* สีเทาเข้ม */
-        margin-bottom: 20px; /* ระยะห่างด้านล่าง */
-      }
+    /* สไตล์เฉพาะสำหรับ h4 */
+    h4 {
+      font-size: 1.5rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #673ab7;
+      /* สีม่วง */
+    }
 
-      /* สไตล์เพิ่มเติมสำหรับลิงก์ภายใน p */
-      p a {
-        color: #0077ff; /* สีน้ำเงิน */
-        text-decoration: none; /* ลบเส้นใต้ */
-      }
+    /* สไตล์เฉพาะสำหรับ h5 */
+    h5 {
+      font-family: "itim", serif;
+      font-size: 1.25rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #e91e63;
+      /* สีชมพู */
+    }
 
-      p a:hover {
-        text-decoration: underline; /* เพิ่มเส้นใต้เมื่อ hover */
-      }
-      .img-fluid-custom {
-    max-width: 60%; /* ทำให้ภาพไม่เกินขนาดของคอนเทนเนอร์ */
-    height: auto; /* ปรับความสูงให้เหมาะสมตามอัตราส่วน */
-      }
-      /* styles.css */
+    h6 {
+      font-size: 1.5rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #ffffff;
+      /* สีชมพู */
+       /* Stroke สำหรับ h6 */
+    }
+    h7 {
+      font-size: 1.5rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #408fe9;
+      /* สีน้ำเงิน */
+    }
+    h8 {
+      font-size: 1.5rem;
+      /* ขนาดตัวอักษร */
+      font-weight: bold;
+      /* ตัวหนา */
+      color: #f3f3f3;
+      /* สีน้ำเงิน */
+    }
 
-/* สไตล์เฉพาะของบล็อก */
+    /* สไตล์เฉพาะสำหรับ p */
+    p {
+      font-size: 1rem;
+      /* ขนาดตัวอักษร */
+      color: #666;
+      /* สีเทาเข้ม */
+      margin-bottom: 20px;
+      /* ระยะห่างด้านล่าง */
+    }
+
+    /* สไตล์เพิ่มเติมสำหรับลิงก์ภายใน p */
+    p a {
+      color: #0077ff;
+      /* สีน้ำเงิน */
+      text-decoration: none;
+      /* ลบเส้นใต้ */
+    }
+
+    p a:hover {
+      text-decoration: underline;
+      /* เพิ่มเส้นใต้เมื่อ hover */
+    }
+
+    .img-fluid-custom {
+      max-width: 60%;
+      /* ทำให้ภาพไม่เกินขนาดของคอนเทนเนอร์ */
+      height: auto;
+      /* ปรับความสูงให้เหมาะสมตามอัตราส่วน */
+    }
+    .navbar-brand {
+    display: flex;
+    align-items: center; /* จัดให้เนื้อหาและโลโก้อยู่กึ่งกลางแนวตั้ง */
+    text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ */
+}
+.navbar-brand img {
+    width: 40px; /* เพิ่มขนาดโลโก้เป็น 40px */
+    height: auto; /* รักษาสัดส่วนภาพ */
+    margin-right: 10px; /* ระยะห่างระหว่างโลโก้และข้อความ */
+}
+
+.logo-text {
+    font-family: 'Arial', sans-serif; /* เปลี่ยนฟอนต์ */
+    font-size: 1.2em; /* ปรับขนาดฟอนต์ */
+    font-weight: bold; /* ทำให้ตัวหนา */
+    color: #333; /* สีข้อความ */
+    margin-left: 10px; /* ระยะห่างระหว่างโลโก้และข้อความ */
+    line-height: 1; /* ปรับความสูงของบรรทัด */
+}
+
+    /* styles.css */
+    /* สไตล์พื้นฐาน */
+    /* สไตล์พื้นฐาน */
+    /* สไตล์พื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
 .blog-header {
     background-color: #333;
     color: #fff;
@@ -124,70 +217,49 @@
     padding: 20px;
 }
 
+.blog-header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
 .blog-main {
     padding: 20px;
-    max-width: 800px;
+    max-width: 1400px; /* ปรับความกว้างสูงสุดให้มากขึ้น */
     margin: 0 auto;
 }
 
-.blog-header h1 {
-    font-size: 2.5em;
+.blog-post {
+    margin-top: 25px;
 }
 
-.blog-post {
-    margin-top: 30px;
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
 }
 
 .blog-item {
     background-color: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 20px; /* ปรับ padding ให้มากขึ้น */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    width: 100%; /* คอลัมน์เดียวบนหน้าจอเล็ก */
 }
 
 .blog-item h2 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
     color: #333;
+    margin-top: 0;
+    margin-bottom: 15px; /* เพิ่มระยะห่างด้านล่าง */
 }
 
 .blog-item p {
-    font-size: 1.2em;
+    font-size: 1.1em; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
     line-height: 1.6;
     color: #666;
-}
-
-.blog-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 15px;
-}
-
-.blog-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-  .blog-container {
-    display: flex;  /* ใช้ flexbox ในการจัดเรียง */
-    justify-content: space-between;  /* จัดให้สองบล็อกมีพื้นที่ห่างกัน */
-    gap: 20px; /* เว้นระยะระหว่างบล็อก */
-    flex-wrap: wrap; /* ให้มัน wrap หากหน้าจอเล็กลง */
-   }
-
-  .blog-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 48%; /* กำหนดความกว้างของแต่ละบล็อก */
-    box-sizing: border-box; /* ให้บล็อกไม่เกินขนาดที่กำหนด */
+    margin: 0;
 }
 
 .blog-image {
@@ -203,7 +275,7 @@
     padding: 10px 20px;
     background-color: #007BFF;
     color: #fff;
-    font-size: 1em;
+    font-size: 1em; /* ปรับขนาดฟอนต์ให้ใหญ่ขึ้น */
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
@@ -213,473 +285,618 @@
 .read-more-btn:hover {
     background-color: #0056b3;
 }
-  body {
-  background-image: url(asda.jpg); /* เพิ่มรูปพื้นหลัง */
-  background-size: cover; /* ให้ภาพพื้นหลังขยายเต็มหน้าจอ */
-  background-position: center; /* ตั้งตำแหน่งของภาพให้ตรงกลาง */
-  background-attachment: fixed; /* ให้ภาพพื้นหลังไม่เลื่อนตามการเลื่อนหน้า */
-  }
- </style>
-    
-    
-  </head>
-  <body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="unnamed-Photoroom.png" alt="Logo" style="width: 30px; height: auto; margin-right: 10px;">
-                Multimedia OF Technology
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight" aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight" aria-labelledby="offcanvasNavbarLightLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLightLabel">MENU</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="course.html">หลักสูตร</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="teacher.html">อาจารย์</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="activity.html">กิจกรรมสาขา</a>
-                      </li>                     
-                        <li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </header>
 
-    <!-- Banner with Carousel -->
-    <section class="banner">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="banner1.jpg" alt="First slide">
-            <div class="carousel-caption">
-              <h3>Welcome to Multimedia Of Technology</h3>
-              <h6>ยินดีต้อนรับ สู่ สาขามัลติมีเดียและเทคโนโลยี<h6>
-            </div>
+.blog-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+    .blog-item {
+        width: calc(50% - 20px); /* 2 คอลัมน์บนหน้าจอขนาดกลาง */
+    }
+}
+
+@media (min-width: 900px) {
+    .blog-item {
+        width: calc(33.333% - 20px); /* 3 คอลัมน์บนหน้าจอขนาดใหญ่ */
+    }
+}
+
+@media (min-width: 1200px) {
+    .blog-item {
+        width: calc(25% - 20px); /* 4 คอลัมน์บนหน้าจอขนาดใหญ่มาก */
+    }
+}
+
+    .read-more-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .read-more-btn:hover {
+      background-color: #0056b3;
+    }
+    .read-more-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    font-family: "Mitr", sans-serif; /* เปลี่ยนฟอนต์เป็น Mitr */
+    font-size: 1em; /* ขนาดฟอนต์ */
+    font-weight: 500; /* ความหนาฟอนต์ */
+    text-decoration: none; /* ลบเส้นใต้ */
+    border-radius: 5px; /* มุมโค้ง */
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* เพิ่มเอฟเฟกต์ transition */
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3; /* เปลี่ยนสีพื้นหลังเมื่อ hover */
+    transform: translateY(-2px); /* เลื่อนปุ่มขึ้นเล็กน้อยเมื่อ hover */
+}
+
+.read-more-btn:active {
+    transform: translateY(0); /* คืนค่าตำแหน่งเมื่อคลิก */
+}
+
+    /* Responsive Design */
+    @media (min-width: 600px) {
+      .blog-item {
+        width: calc(50% - 20px);
+        /* 2 คอลัมน์บนหน้าจอขนาดกลาง */
+      }
+    }
+
+    @media (min-width: 900px) {
+      .blog-item {
+        width: calc(33.333% - 20px);
+        /* 3 คอลัมน์บนหน้าจอขนาดใหญ่ */
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .blog-item {
+        width: calc(25% - 20px);
+        /* 4 คอลัมน์บนหน้าจอขนาดใหญ่มาก */
+      }
+    }
+
+    body {
+      background-image: url(asda.jpg);
+      /* เพิ่มรูปพื้นหลัง */
+      background-size: cover;
+      /* ให้ภาพพื้นหลังขยายเต็มหน้าจอ */
+      background-position: center;
+      /* ตั้งตำแหน่งของภาพให้ตรงกลาง */
+      background-attachment: fixed;
+      /* ให้ภาพพื้นหลังไม่เลื่อนตามการเลื่อนหน้า */
+    }
+    .nav-item .nav-link {
+    font-family: "Mitr", sans-serif; /* เปลี่ยนฟอนต์เป็น Mitr */
+    font-size: 1.1em; /* ขนาดฟอนต์ */
+    font-weight: 500; /* ความหนาฟอนต์ */
+    color: #333; /* สีข้อความ */
+    text-decoration: none; /* ลบเส้นใต้ */
+    transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์ transition */
+    }
+
+    .nav-item .nav-link:hover {
+    color: #007BFF; /* เปลี่ยนสีข้อความเมื่อ hover */
+    }
+
+    .nav-item .nav-link.active {
+    color: #007BFF; /* สีข้อความสำหรับลิงก์ที่ active */
+    font-weight: 600; /* ตัวหนาเมื่อ active */
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar bg-body-tertiary" aria-label="Light offcanvas navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="unnamed-Photoroom.png" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
+          <span class="logo-text">Multimedia Technology</span>
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarLight"
+          aria-controls="offcanvasNavbarLight" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbarLight"
+          aria-labelledby="offcanvasNavbarLightLabel">
+          <div class="offcanvas-header">
+            <h7 class="offcanvas-title" id="offcanvasNavbarLightLabel">MENU</h7>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div class="carousel-item">
-            <img src="banner2.jpg" alt="Second slide">
-            <div class="carousel-caption">
-              <h3>โลกของมัลติมีเดีย</h3>
-            </div>
-          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">หน้าแรก</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="course.html">หลักสูตร</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="teacher.html">อาจารย์</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="activity.html">กิจกรรมสาขา</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">ช่องทางการติดต่อ</a>
+              </li> 
+              <li>
+            </ul>
+            </li>
+            </ul>
+            </form>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </section>
-    
-  <body>
-     <div class="container mt-5">
-          <div class="row align-items-center">
-            <div class="col-md-6">
-            </div>
-            <center>
-              <div class="col-md-5 text-center">
-                <img src="rus-logo.png" alt="People working" class="img-fluid img-fluid-custom">
-              </div>
-          </center>
+    </nav>
+  </header>
+
+  <!-- Banner with Carousel -->
+  <section class="banner">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="banner1.jpg" alt="First slide">
+          <div class="carousel-caption">
+            <h1>Welcome to Multimedia Technology</h1>
+            <h6>ยินดีต้อนรับ สู่ เว็บไซต์สาขาเทคโนโลยีมัลติมีเดีย<h6>
           </div>
         </div>
-    </body>
+        <div class="carousel-item">
+          <img src="banner2.jpg" alt="Second slide">
+          <div class="carousel-caption">
+            <h1>มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ศูนย์หันตรา</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+  </section>
 
-    <body>
-      <center>
-        <h1>กิจกรรมโดดเด่นของสาขา</h1>
-      </center>
-    </body>
-    <!DOCTYPE html>
-<html lang="th">
-<head>
+  <body>
+    <div class="container mt-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+        </div>
+        <center>
+          <div class="col-md-5 text-center">
+            <img src="rus-logo.png" alt="People working" class="img-fluid img-fluid-custom">
+          </div>
+        </center>
+      </div>
+    </div>
+  </body>
+
+  <body>
+    <center>
+      <h1>กิจกรรมโดดเด่นของสาขา</h1>
+    </center>
+  </body>
+  <!DOCTYPE html>
+  <html lang="th">
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>บล็อกของฉัน</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <center>
-   <main class="blog-main">
-        <article class="blog-post">
-          <div class="blog-container">
-            <section class="blog-item">
-                <h2>หัวข้อบทความที่หนึ่ง</h2>
-                <p>13-22 ธ.ค.2567 คณาจารย์และนักศึกษา สาขาวิชาเทคโนโลยีมัลติมีเดีย มทร.สุวรรณภูมิ ศูนย์พระนครศรีอยุธยา หันตรา ได้นำเสนอผลงานของสาขาวิชา ใน Theme : Digital Heritage มรดกทางวัฒนธรรม สู่นวัตกรรมดิจิทัล ในงานยอยศยิ่งฟ้า อยุธยามรดกโลก ในบูทจัดแสดงของมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ โดยได้รับความสนใจจากผู้มาเที่ยวชมงาน</p>
-                <img src="471174141_1086147599969315_5845963058818433850_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
-                
-                <!-- ปุ่มอ่านเพิ่มเติม -->
-                <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0FiyyLn4i53yqK57joD2H3HcatzunHpjWf8vuNqkkkbXnTqF32yip922J2qtFSh7il" class="read-more-btn">อ่านเพิ่มเติม</a>
-            </section>
-        
-            <section class="blog-item">
-                <h2>หัวข้อบทความที่สอง</h2>
-                <p>21 พ.ย.2567 คณาจารย์และนักศึกษาหลักสูตรเทคโนโลยีมัลติมีเดีย ได้ต้อนรับและนำเสนอผลงาน Digital Heritage : มรดกทางวัฒนธรรม สู่นวัตกรรมดิจิทัล กับผู้บริหารและคณะกรรมการสถาบันมรดกสยามเพื่อการเรียนรู้ตลอดชีวิต นำโดยท่านชายวัชเรศร วิวัชรวงศ์ (ท่านอ้น) ประธานที่ปรึกษากิตติมศักดิ์สถาบันฯ ขอขอบคุณ มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ ที่เปิดโอกาสในการนำเสนอผลงานของคณาจารย์และนักศึกษาในสาขาวิชาจนได้รับคำชื่นชมจากหน่วยงานภายนอก</p>
-                <img src="468308646_1064431465474262_9094867999525086513_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
-                
-                <!-- ปุ่มอ่านเพิ่มเติม -->
-                <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0ZNpy8nhqY37Ysrc9x4ALYARHyTnWhh7z3ryR8fBS9GgQd6pDaRcijUr5RMg58q5Jl" class="read-more-btn">อ่านเพิ่มเติม</a>
-            </section>
-            <section class="blog-item">
-              <h2>หัวข้อบทความที่สาม</h2>
-              <p>ขอแสดงความยินดีกับนักศึกษาสาขาวิชาเทคโนโลยีมัลติมีเดีย คณะวิทยาศาสตร์และเทคโนโลยี ศูนย์หันตรา
-                นายธนชัย คำสมมาตร์ ได้รับรางวัลชนะเลิศ Mr. Library และ
-                น.ส.อักษราภัค พิลา ได้รับรางวัลรองชนะเลิศ Miss Library
-                จัดการประกวดโดย  สำนักวิทยบริการและเทคโนโลยีสารสนเทศ มทร.สุวรรณภูมิ</p>
-              <img src="461299138_1027553419162067_3626402120256642952_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
-              
-              <!-- ปุ่มอ่านเพิ่มเติม -->
-              <a href="https://www.facebook.com/MMT.RUS/posts/pfbid02JyUhA8CTAZc3XG3yjSMu2eEBppS1E9SvoxVfe2VRCMe1UTTchiem63QhvQA6szNKl" class="read-more-btn">อ่านเพิ่มเติม</a>
-          </section>
-          <section class="blog-item">
-            <h2>หัวข้อบทความที่สี่</h2>
-            <p>วันที่ 20 กันยายน 2567
-              อาจารย์สัญญา คำจริง รองอธิการบดี, ผศ.อำนาจ สุขแจ่ม ผู้ช่วยอธิการบดี, ผศ.ดร.เจษฎา จันทร์ผา คณบดีคณะวิทยาศาสตร์และเทคโนโลยี, ดร.สัมพันธ์ สุกใส คณบดีคณะศิลปศาสตร์ และนางสาวชวนพิศ เปรมกมล ผู้อำนวยการกองพัฒนานักศึกษา พร้อมด้วยคณาจารย์ เจ้าหน้าที่ ร่วมเป็นสักขีพยาน โครงการทุนการศึกษา โรงเรียนแนวท่อส่งก๊าซธรรมชาติ ปี 2567 โดย นายวิมล  ทีประเสริฐ ผู้จัดการแผนกบริหารศูนย์ปฏิบัติการระบบท่อส่งก๊าซเขต 11 
-              โดยมีนักศึกษาได้รับคัดเลือกให้รับทุน ทุนละ 10,000 บาท จำนวน 2 ทุน รวม 20,000 บาท</p>
-            <img src="460735541_1018483160069093_1901163982335178938_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
-            
-            <!-- ปุ่มอ่านเพิ่มเติม -->
-            <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0TjR5VC1WHPrxYNMGH5k3tiF8JXm3j7RRUJnYAaC633apqcJ5Vq76bKoQRuPj2upSl" class="read-more-btn">อ่านเพิ่มเติม</a>
-        </section>
-        </div>
-        
-        </article>
-    </main>
-  </center>
-  <center>
-    <h4>รูปภาพตัวอย่างการเรียนในสาขาเทคโนโลยีมัลติมีเดีย</h4>
-  </center>
+  </head>
+
+  <body>
+    <center>
+
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>บล็อก Responsive</title>
+        <link rel="stylesheet" href="styles.css"> <!-- เชื่อมต่อไฟล์ CSS -->
+      </head>
+
+      <body>
+        <center>
+          <main class="blog-main">
+            <article class="blog-post">
+              <div class="blog-container">
+                <!-- บทความที่ 1 -->
+                <section class="blog-item">
+                  <h2>นำเสนอผลงานของสาขาวิชา ใน Theme  Digital Heritage</h2>
+                  <p>13-22 ธ.ค.2567 คณาจารย์และนักศึกษา สาขาวิชาเทคโนโลยีมัลติมีเดีย มทร.สุวรรณภูมิ ศูนย์พระนครศรีอยุธยา
+                    หันตรา ได้นำเสนอผลงานของสาขาวิชา ใน Theme : Digital Heritage มรดกทางวัฒนธรรม สู่นวัตกรรมดิจิทัล
+                    ในงานยอยศยิ่งฟ้า อยุธยามรดกโลก ในบูทจัดแสดงของมหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ
+                    โดยได้รับความสนใจจากผู้มาเที่ยวชมงาน</p>
+                  <img src="471174141_1086147599969315_5845963058818433850_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
+                  <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0FiyyLn4i53yqK57joD2H3HcatzunHpjWf8vuNqkkkbXnTqF32yip922J2qtFSh7il"
+                    class="read-more-btn"target="_blank">อ่านเพิ่มเติม</a>                    
+                </section>
+
+                <!-- บทความที่ 2 -->
+                <section class="blog-item">
+                  <h2>คณาจารย์และนักศึกษาหลักสูตรเทคโนโลยีมัลติมีเดีย ได้ต้อนรับและนำเสนอผลงาน Digital
+                    Heritage</h2>
+                  <p>21 พ.ย.2567 คณาจารย์และนักศึกษาหลักสูตรเทคโนโลยีมัลติมีเดีย ได้ต้อนรับและนำเสนอผลงาน Digital
+                    Heritage : มรดกทางวัฒนธรรม สู่นวัตกรรมดิจิทัล
+                    กับผู้บริหารและคณะกรรมการสถาบันมรดกสยามเพื่อการเรียนรู้ตลอดชีวิต นำโดยท่านชายวัชเรศร วิวัชรวงศ์
+                    (ท่านอ้น) ประธานที่ปรึกษากิตติมศักดิ์สถาบันฯ ขอขอบคุณ มหาวิทยาลัยเทคโนโลยีราชมงคลสุวรรณภูมิ
+                    ที่เปิดโอกาสในการนำเสนอผลงานของคณาจารย์และนักศึกษาในสาขาวิชาจนได้รับคำชื่นชมจากหน่วยงานภายนอก</p>
+                  <img src="468308646_1064431465474262_9094867999525086513_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
+                  <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0ZNpy8nhqY37Ysrc9x4ALYARHyTnWhh7z3ryR8fBS9GgQd6pDaRcijUr5RMg58q5Jl"
+                    class="read-more-btn"target="_blank">อ่านเพิ่มเติม</a>
+                </section>
+
+                <!-- บทความที่ 3 -->
+                <section class="blog-item">
+                  <h2>นักศึกษา เทคโนโลยีมัลติมีเดีย ได้รับรางวัลชนะเลิศ  Mr. Library และ ได้รับรางวัลรองชนะเลิศ Miss Library</h2>
+                  <p>ขอแสดงความยินดีกับนักศึกษาสาขาวิชาเทคโนโลยีมัลติมีเดีย คณะวิทยาศาสตร์และเทคโนโลยี ศูนย์หันตรา
+                    นายธนชัย คำสมมาตร์ ได้รับรางวัลชนะเลิศ Mr. Library และ
+                    น.ส.อักษราภัค พิลา ได้รับรางวัลรองชนะเลิศ Miss Library
+                    จัดการประกวดโดย สำนักวิทยบริการและเทคโนโลยีสารสนเทศ มทร.สุวรรณภูมิ</p>
+                  <img src="461299138_1027553419162067_3626402120256642952_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
+                  <a href="https://www.facebook.com/MMT.RUS/posts/pfbid02JyUhA8CTAZc3XG3yjSMu2eEBppS1E9SvoxVfe2VRCMe1UTTchiem63QhvQA6szNKl"
+                    class="read-more-btn"target="_blank">อ่านเพิ่มเติม</a>
+                </section>
+
+                <!-- บทความที่ 4 -->
+                <section class="blog-item">
+                  <h2>โครงการทุนการศึกษา โรงเรียนแนวท่อส่งก๊าซธรรมชาติ ปี 2567</h2>
+                  <p>วันที่ 20 กันยายน 2567
+                    อาจารย์สัญญา คำจริง รองอธิการบดี, ผศ.อำนาจ สุขแจ่ม ผู้ช่วยอธิการบดี, ผศ.ดร.เจษฎา จันทร์ผา
+                    คณบดีคณะวิทยาศาสตร์และเทคโนโลยี, ดร.สัมพันธ์ สุกใส คณบดีคณะศิลปศาสตร์ และนางสาวชวนพิศ เปรมกมล
+                    ผู้อำนวยการกองพัฒนานักศึกษา พร้อมด้วยคณาจารย์ เจ้าหน้าที่ ร่วมเป็นสักขีพยาน โครงการทุนการศึกษา
+                    โรงเรียนแนวท่อส่งก๊าซธรรมชาติ ปี 2567 โดย นายวิมล ทีประเสริฐ
+                    ผู้จัดการแผนกบริหารศูนย์ปฏิบัติการระบบท่อส่งก๊าซเขต 11
+                    โดยมีนักศึกษาได้รับคัดเลือกให้รับทุน ทุนละ 10,000 บาท จำนวน 2 ทุน รวม 20,000 บาท</p>
+                  <img src="460735541_1018483160069093_1901163982335178938_n.jpg" alt="ภาพตัวอย่าง" class="blog-image">
+                  <a href="https://www.facebook.com/MMT.RUS/posts/pfbid0TjR5VC1WHPrxYNMGH5k3tiF8JXm3j7RRUJnYAaC633apqcJ5Vq76bKoQRuPj2upSl"
+                    class="read-more-btn"target="_blank">อ่านเพิ่มเติม</a>
+                </section>
+              </div>
+            </article>
+          </main>
+        </center>
+      </body>
+      </div>
+
+      </article>
+      </main>
+    </center>
+    <center>
+      <h1>รูปภาพตัวอย่างการเรียนในสาขาเทคโนโลยีมัลติมีเดีย</h1>
+    </center>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
   </body>
   <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Section</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-        }
-        .team-section {
-            text-align: center;
-            padding: 50px 20px;
-        }
-        .team-section h2 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-        .team-section p {
-            color: #666;
-            margin: 10px 0 30px;
-        }
-        .team-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .team-member {
-            position: relative;
-            width: 250px;
-            text-align: center;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            background-color: #fff;
-        }
-        .team-member img {
-            width: 100%;
-            display: block;
-        }
-        .team-info {
-            padding: 15px;
-        }
-        .team-info h3 {
-            margin: 10px 0 5px;
-            font-size: 1.2rem;
-            color: #0077ff;
-            
-        }
-        .team-info h4 {
-            margin: 10px 0 5px;
-            font-size: 1.2rem;
-            color: #000000;
-            
-        }
-        .team-info h5 {
-            margin: 10px 0 5px;
-            font-size: 1.2rem;
-            color: #ff0000;
-        }
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .team-member:hover .overlay {
-            opacity: 1;
-        }
-        .overlay a {
-            color: #fff;
-            margin: 5px;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-        .overlay a:hover {
-            text-decoration: underline;
-        }
-    </style>
-   <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    .team-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .team-section h2 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    .team-section p {
+      color: #666;
+      margin: 10px 0 30px;
+    }
+
+    .team-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .team-member {
+      position: relative;
+      width: 250px;
+      text-align: center;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+    }
+
+    .team-member img {
+      width: 100%;
+      display: block;
+    }
+
+    .team-info {
+      padding: 15px;
+    }
+
+    .team-info h3 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #0077ff;
+
+    }
+
+    .team-info h4 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #000000;
+
+    }
+
+    .team-info h5 {
+      margin: 10px 0 5px;
+      font-size: 1.2rem;
+      color: #ff0000;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .team-member:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay a {
+      color: #fff;
+      margin: 5px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .overlay a:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
     <style>
       .gallery {
-  display: inline-block; /* ให้รูปภาพแสดงในแนวนอน */
-  margin-right: 15px; /* เพิ่มระยะห่างระหว่างรูปภาพ */
-  margin-bottom: 15px; /* เพิ่มระยะห่างแนวตั้ง */
-}
+        display: inline-block;
+        /* ให้รูปภาพแสดงในแนวนอน */
+        margin-right: 15px;
+        /* เพิ่มระยะห่างระหว่างรูปภาพ */
+        margin-bottom: 15px;
+        /* เพิ่มระยะห่างแนวตั้ง */
+      }
 
-.gallery img {
-  width: 160%; /* กำหนดให้รูปภาพมีความกว้างเต็มกรอบ */
-  height: auto; /* ให้ความสูงของรูปปรับตามสัดส่วน */
-}
+      .gallery img {
+        width: 160%;
+        /* กำหนดให้รูปภาพมีความกว้างเต็มกรอบ */
+        height: auto;
+        /* ให้ความสูงของรูปปรับตามสัดส่วน */
+      }
 
-div.gallery {
-  margin: 3px;
-  border: 3px solid #ccc;
-  width: 300px; /* ขยายขนาดกรอบให้ใหญ่ขึ้น */
-  height: 300px; /* กำหนดความสูงของกรอบ */
-  overflow: hidden; /* ซ่อนส่วนเกินที่เกินขนาดกรอบ */
-}
+      div.gallery {
+        margin: 3px;
+        border: 3px solid #ccc;
+        width: 300px;
+        /* ขยายขนาดกรอบให้ใหญ่ขึ้น */
+        height: 300px;
+        /* กำหนดความสูงของกรอบ */
+        overflow: hidden;
+        /* ซ่อนส่วนเกินที่เกินขนาดกรอบ */
+      }
 
-div.gallery:hover {
-  border: 1px solid #777; /* เปลี่ยนสีกรอบเมื่อ hover */
-}
+      div.gallery:hover {
+        border: 1px solid #777;
+        /* เปลี่ยนสีกรอบเมื่อ hover */
+      }
 
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
     </style>
-<body>
-  <center>
-    <div class="gallery">
+
+  <body>
+    <center>
+      <div class="gallery">
         <img src="429850235_899336748650402_2361564493347519839_n.jpg" alt="Cinque Terre">
-      </a>
-    </div>
-    <div class="gallery">
+        </a>
+      </div>
+      <div class="gallery">
         <img src="429854384_899337431983667_160435398380643719_n.jpg" alt="Forest">
-      </a>
-    </div>
-    <div class="gallery">
+        </a>
+      </div>
+      <div class="gallery">
         <img src="429905264_899336298650447_799974429207892900_n.jpg" alt="Forest">
-      </a>
-    </div>
-    <div class="gallery">
+        </a>
+      </div>
+      <div class="gallery">
         <img src="83977928_2936361336382933_7114161284811063296_n.jpg" alt="Forest">
-      </a>
-    </div>
-  </center>
-</body>
-<CENTER>
-<div>
-  <h4>สถานที่ตั้งมหาลัยวิทยาลัย</h4>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.86751707662!2d100.60300154641003!3d14.37707623953883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e27576e666d439%3A0xa82726f2a420455c!2sRajamangala%20University%20of%20Technology%20Suvarnabhumi%2CPhraNakhon%20Si%20Ayutthaya%20Huntra!5e0!3m2!1sen!2sth!4v1738576541634!5m2!1sen!2sth" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</CENTER>
+        </a>
+      </div>
+    </center>
+  </body>
+  <style>
+    /* กำหนดสไตล์สำหรับลิงก์ */
+    a.no-underline {
+      text-decoration: none;
+      /* ลบเส้นใต้ */
+      color: inherit;
+      /* ใช้สีตัวหนังสือตามปกติ */
+    }
 
-<section class="team-section">
-  <h5>ช่องทางการติดตาม</h5>
-  <div class="team-container">
-    <!-- Facebook -->
-    <div class="team-member">
-      <a href="https://www.facebook.com/MMT.RUS/" target="_blank" class="no-underline">
-        <div class="team-info">
-          <h3>FACEBOOK</h3>
-          <center>
-            <img src="Facebook_Logo_(2019).png" alt="Facebook Logo" style="width: 40px; height: 40px;">
-          </center>
-        </div>
-        <div class="overlay"></div>
-      </a>
-    </div>
- 
-    <!-- TikTok -->
-    <div class="team-member">
-      <a href="https://www.tiktok.com/@mmt_rus" target="_blank" class="no-underline">
-        <div class="team-info h4">
-          <h4>TIKTOK</h4>
-          <center>
-            <img src="image-removebg-preview (1).png" alt="Facebook Logo" style="width: 40px; height: 40px;">
-          </center>
-        </div>
-        <div class="overlay"></div>
-      </a>
-    </div>
-  
-    <!-- YouTube -->
-    <div class="team-member">
-      <a href="https://www.youtube.com/channel/UClM8qn2QhlC3q6EiVznQ9JA" target="_blank" class="no-underline">
-        <div class="team-info h5">
-          <h5>YOUTUBE</h5>
-          <center>
-            <img src="image-removebg-preview (4).png" alt="Facebook Logo" style="width: 45px; height: 45px;">
-          </center>
-        </div>
-        <div class="overlay"></div>
-      </a>
-    </div>
-</section>
-<style>
-  
-  
-/* กำหนดสไตล์สำหรับลิงก์ */
-a.no-underline {
-    text-decoration: none; /* ลบเส้นใต้ */
-    color: inherit; /* ใช้สีตัวหนังสือตามปกติ */
-}
+    a.no-underline:hover {
+      text-decoration: underline;
+      /* เพิ่มเส้นใต้เฉพาะเมื่อเอาเมาส์ไปวาง */
+    }
+  </style>
 
-a.no-underline:hover {
-    text-decoration: underline; /* เพิ่มเส้นใต้เฉพาะเมื่อเอาเมาส์ไปวาง */
-}
-</style>
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services Section</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fefefe;
-        }
-        .services-section {
-            text-align: center;
-            padding: 50px 20px;
-            background: #fff5f0;
-        }
-        .services-section h2 {
-            font-size: 2.5rem;
-            color: #333;
-        }
-        .services-section p {
-            color: #666;
-            margin: 10px 0 30px;
-        }
-        .services-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .service-box {
-            width: 250px;
-            padding: 20px;
-            border-radius: 10px;
-            background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .service-box:hover {
-            transform: translateY(-10px);
-        }
-        .service-icon img {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 15px;
-        }
-        .service-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .service-description {
-            font-size: 0.9rem;
-            color: #777;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fefefe;
+      }
+
+      .services-section {
+        text-align: center;
+        padding: 50px 20px;
+        background: #fff5f0;
+      }
+
+      .services-section h2 {
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      .services-section p {
+        color: #666;
+        margin: 10px 0 30px;
+      }
+
+      .services-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .service-box {
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .service-box:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-icon img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+      }
+
+      .service-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .service-description {
+        font-size: 0.9rem;
+        color: #777;
+      }
     </style>
     <div class="content">
       <!-- เนื้อหาหลักของเว็บไซต์ที่นี่ -->
     </div>
-    
+
     <div class="content">
       <!-- เนื้อหาหลักของเว็บไซต์ที่นี่ -->
     </div>
-    
+
     <footer class="footer">
       <div class="container text-center">
         <p>&copy; 2025 Multimedia of Technology. All rights reserved.</p>
       </div>
     </footer>
-    
+
     <style>
       /* ใช้ Flexbox กับ body เพื่อให้ footer อยู่ล่างสุด */
-      body, html {
-        height: 100%; /* ทำให้ body และ html ครอบคลุมพื้นที่ทั้งหมด */
-        margin: 0; /* ลบ margin */
-        display: flex; /* ใช้ flexbox */
-        flex-direction: column; /* จัดให้องค์ประกอบอยู่ในคอลัมน์ */
+      body,
+      html {
+        height: 100%;
+        /* ทำให้ body และ html ครอบคลุมพื้นที่ทั้งหมด */
+        margin: 0;
+        /* ลบ margin */
+        display: flex;
+        /* ใช้ flexbox */
+        flex-direction: column;
+        /* จัดให้องค์ประกอบอยู่ในคอลัมน์ */
       }
-    
+
       .content {
-        flex: 1; /* เนื้อหาจะขยายตัวจนเต็มพื้นที่ที่เหลือ */
-        padding-bottom: 50px; /* เว้นที่ด้านล่างให้กับ footer */
+        flex: 1;
+        /* เนื้อหาจะขยายตัวจนเต็มพื้นที่ที่เหลือ */
+        padding-bottom: 50px;
+        /* เว้นที่ด้านล่างให้กับ footer */
       }
-    
+
       .footer {
-        background-color: #33333359; /* สีพื้นหลังสำหรับ footer */
-        color: white; /* สีข้อความ */
-        padding: 10px 0; /* ระยะห่างบนและล่าง */
-        width: 100%; /* ให้ footer ขยายไปทั่ว */
-        text-align: center; /* จัดข้อความให้อยู่กลาง */
-        font-size: 15px; /* ขนาดตัวอักษร */
+        background-color: #33333359;
+        /* สีพื้นหลังสำหรับ footer */
+        color: white;
+        /* สีข้อความ */
+        padding: 10px 0;
+        /* ระยะห่างบนและล่าง */
+        width: 100%;
+        /* ให้ footer ขยายไปทั่ว */
+        text-align: center;
+        /* จัดข้อความให้อยู่กลาง */
+        font-size: 15px;
+        /* ขนาดตัวอักษร */
       }
-    </style>            
-</html>
+    </style>
+
+  </html>
 
 </html>
